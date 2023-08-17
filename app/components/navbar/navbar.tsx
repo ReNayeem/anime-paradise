@@ -6,14 +6,18 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import './navbar.css';
+import { usePathname } from 'next/navigation';
 
 function NavScrollExample() {
+  const pathname = usePathname();
+
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container className='container' fluid>
-        <Navbar.Brand href="#">Anime Paradise</Navbar.Brand>
+        <Link href="/">
+          <Navbar.Brand>Anime Paradise</Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -21,24 +25,29 @@ function NavScrollExample() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Link href="pages/upcoming">
-              <h6 className='navigation-link'>Upcoming</h6>
+
+            <Link href="/">
+              <h6 className={(pathname == "/" ? 'navigation-link navigation-link-active' : 'navigation-link navigation-link-inactive')}>Home</h6>
             </Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href="#" disabled>
-              Link
-            </Nav.Link>
+
+            <Link href="/pages/upcoming">
+              <h6 className={(pathname == "/pages/upcoming" ? 'navigation-link navigation-link-active' : 'navigation-link navigation-link-inactive')}>Upcoming</h6>
+            </Link>
+
+            <Link href="/pages/trending">
+              <h6 className={(pathname == "/pages/trending" ? 'navigation-link navigation-link-active' : 'navigation-link navigation-link-inactive')}>Trending</h6>
+            </Link>
+
+            <Link href="/pages/most-rated">
+              <h6 className={(pathname == "/pages/most-rated" ? 'navigation-link navigation-link-active' : 'navigation-link navigation-link-inactive')}>Most Rated</h6>
+            </Link>
+
+            <Link href="/pages/blog-news">
+              <h6 className={(pathname == "/pages/blog-news" ? 'navigation-link navigation-link-active' : 'navigation-link navigation-link-inactive')}>Blog News</h6>
+            </Link>
+
           </Nav>
+
           <Form className="d-flex">
             <Form.Control
               type="search"

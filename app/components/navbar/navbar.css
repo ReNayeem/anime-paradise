@@ -1,5 +1,25 @@
-.navigation-link {
-    color: black;
+* {
     text-decoration: none !important;
-    margin-top: 1rem !important;
+}
+
+.navigation-link {
+    font-weight: 400;
+    margin-top: .6rem;
+    padding: .4rem;
+    transition: .5s all ease;
+}
+
+.navigation-link:hover {
+    color: #198754;
+    transition: .5s all ease;
+}
+
+.navigation-link-inactive {
+    color: gray;
+    font-weight: 400;
+}
+
+.navigation-link-active {
+    color: #198754;
+    font-weight: 600;
 }
