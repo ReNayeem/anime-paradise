@@ -2,6 +2,7 @@ import React from "react";
 import Upcoming from "./Upcoming";
 import Trending from "./Trending";
 import MostRated from "./MostRated";
+import Carousel from '../components/carousel/carousel'
 
 //TODO: Implement the components
 const page = () => {
@@ -10,6 +11,7 @@ const page = () => {
       <Upcoming />
       <Trending />
       <MostRated />
+      <Carousel />
     </>
   );
 };
