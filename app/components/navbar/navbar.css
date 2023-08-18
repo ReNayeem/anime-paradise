@@ -16,7 +16,7 @@
 }
 
 .navigation-link-2 {
-    width: 101px !important;
+    width: 100px;
 }
 
 .navigation-link:hover {
@@ -32,4 +32,8 @@
 .navigation-link-active {
     color: #198754;
     font-weight: 600;
+}
+
+.navigation-link-active-2 {
+    width: 102px;
 }
