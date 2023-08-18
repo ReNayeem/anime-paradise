@@ -8,6 +8,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './navbar.css';
 import { usePathname } from 'next/navigation';
+import logo from '../../resources/logo.png';
+import Image from 'next/image';
 
 function NavScrollExample() {
   const pathname = usePathname();
@@ -15,7 +17,8 @@ function NavScrollExample() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container className='container' fluid>
-        <Link href="/">
+        <Link className='d-flex align-items-center' href="/">
+          <Image className='navbar-logo' src={logo} alt="" />
           <Navbar.Brand>Anime Paradise</Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -39,11 +42,11 @@ function NavScrollExample() {
             </Link>
 
             <Link href="/pages/most-rated">
-              <h6 className={(pathname == "/pages/most-rated" ? 'navigation-link navigation-link-active' : 'navigation-link navigation-link-inactive')}>Most Rated</h6>
+              <h6 className={(pathname == "/pages/most-rated" ? 'navigation-link navigation-link-2 navigation-link-active navigation-link-active-2' : 'navigation-link navigation-link-2 navigation-link-inactive')}>Most Rated</h6>
             </Link>
 
             <Link href="/pages/blog-news">
-              <h6 className={(pathname == "/pages/blog-news" ? 'navigation-link navigation-link-active' : 'navigation-link navigation-link-inactive')}>Blog News</h6>
+              <h6 className={(pathname == "/pages/blog-news" ? 'navigation-link navigation-link-2 navigation-link-active' : 'navigation-link navigation-link-2 navigation-link-inactive')}>Blog News</h6>
             </Link>
 
           </Nav>

@@ -2,11 +2,21 @@
     text-decoration: none !important;
 }
 
+.navbar-logo {
+    max-width: 45px;
+    max-height: 45px;
+    margin-right: 1rem;
+}
+
 .navigation-link {
     font-weight: 400;
     margin-top: .6rem;
     padding: .4rem;
     transition: .5s all ease;
+}
+
+.navigation-link-2 {
+    width: 101px !important;
 }
 
 .navigation-link:hover {
