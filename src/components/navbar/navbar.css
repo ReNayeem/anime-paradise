@@ -15,10 +15,6 @@
     transition: .5s all ease;
 }
 
-.navigation-link-2 {
-    width: 100px;
-}
-
 .navigation-link:hover {
     color: #198754;
     transition: .5s all ease;
@@ -32,8 +28,4 @@
 .navigation-link-active {
     color: #198754;
     font-weight: 600;
-}
-
-.navigation-link-active-2 {
-    width: 102px;
 }

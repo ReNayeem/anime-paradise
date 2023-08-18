@@ -83,8 +83,8 @@ function AppNavbar() {
               <h6
                 className={
                   pathname == "/pages/news"
-                    ? "navigation-link navigation-link-2 navigation-link-active"
-                    : "navigation-link navigation-link-2 navigation-link-inactive"
+                    ? "navigation-link navigation-link-active"
+                    : "navigation-link navigation-link-inactive"
                 }
               >
                 News
