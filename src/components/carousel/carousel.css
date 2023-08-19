@@ -1,0 +1,14 @@
+.custom-carousel {
+    background-color: rgb(231, 231, 231);
+}
+
+.custom-carousel-2 {
+    height: 500px;
+    color: black;
+    align-items: center;
+}
+
+.banner-img {
+    max-width: 750px;
+    max-height: 237.75px;
+}
