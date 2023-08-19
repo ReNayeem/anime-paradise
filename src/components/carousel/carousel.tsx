@@ -9,41 +9,18 @@ import { banners } from "@/data/banner.data";
 function UncontrolledExample() {
   return (
     <div>
-      {banners.map((banner, index) => {
-        return <p>{banner.name}</p>;
-      })}
       <Carousel className="container">
-        <Carousel.Item>
-          <div className="d-flex">
-            <Image src={ExampleCarouselImage} alt="" />
+        {banners.map((banner, index) => {
+          return <Carousel.Item>
+            <div className="d-flex">
+              <Image src={ExampleCarouselImage} alt="" />
 
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-              rem minima quidem illum asperiores ducimus ipsa voluptatem iure
-              beatae exercitationem, ex repellat accusantium fuga? Architecto
-              voluptatibus molestiae maxime doloremque voluptatum beatae
-              laboriosam laudantium minus vero! Laboriosam, cumque. Facere
-              blanditiis quo nesciunt expedita, deserunt facilis ea deleniti,
-              vel nihil, totam quas.
-            </p>
-          </div>
-        </Carousel.Item>
-        <Carousel.Item>
-          <Image src={ExampleCarouselImage} alt="" />
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <Image src={ExampleCarouselImage} alt="" />
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
+              <p>
+                {banner.name}
+              </p>
+            </div>
+          </Carousel.Item>
+        })}
       </Carousel>
     </div>
   );
