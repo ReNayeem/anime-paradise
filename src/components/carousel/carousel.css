@@ -12,3 +12,52 @@
     max-width: 750px;
     max-height: 237.75px;
 }
+
+.banner-anime-details {
+    padding: 0 2rem;
+}
+
+.banner-anime-name {
+    font-size: 40px;
+    line-height: 1.1em;
+    font-weight: 700;
+}
+
+.banner-anime-description {
+    font-weight: 300;
+    line-height: 1.5em;
+    font-size: 13px;
+}
+
+.banner-btn {
+    height: 45px;
+    width: 155px;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: .2rem;
+    border-radius: .5rem;
+    background-color: #ffdd95;
+    border: 2px solid #ffdd95;
+    transition: 1s all ease;
+}
+
+.banner-btn:hover {
+    border: 2px solid #469e75;
+    background-color: #469e75;
+    transition: 1s all ease;
+    color: white;
+}
+
+.banner-btn-icon {
+    margin-bottom: .05rem;
+    transition: 1s all ease;
+}
+
+svg {
+    color: white !important;
+}
+
+.banner-btn:hover .banner-btn-icon {
+    color: white;
+    transition: 1s all ease;
+}
