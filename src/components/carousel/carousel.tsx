@@ -9,7 +9,7 @@ function BannerCarousel() {
   return (
     <div className="custom-carousel">
       <Carousel>
-        {banners.map((banner, index) => {
+        {banners.slice(0, 3).map((banner, index) => {
           return (
             <Carousel.Item key={index}>
               <div className="d-flex container custom-carousel-2">
