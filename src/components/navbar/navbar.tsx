@@ -19,7 +19,7 @@ function AppNavbar() {
         <Link className="d-flex align-items-center" href="/">
           <Image
             className="navbar-logo"
-            src={"/nice-a.png"}
+            src={"/app-icon.png"}
             alt="app logo"
             width={45}
             height={45}
