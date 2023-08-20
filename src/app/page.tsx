@@ -2,16 +2,15 @@ import React from "react";
 import Upcoming from "./Upcoming";
 import Trending from "./Trending";
 import MostRated from "./MostRated";
-import Carousel from '../components/carousel/carousel'
+import Banner from "@/components/banner/Banner";
 
-//TODO: Implement the components
 const page = () => {
   return (
     <>
+      <Banner />
       <Upcoming />
       <Trending />
       <MostRated />
-      <Carousel />
     </>
   );
 };
