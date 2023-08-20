@@ -1,5 +1,7 @@
 .custom-carousel {
-    background-color: rgb(231, 231, 231);
+    /* background-color: rgb(231, 231, 231); */
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
 
 .custom-carousel-2 {
@@ -38,13 +40,13 @@
     border-radius: .5rem;
     background-color: #ffdd95;
     border: 2px solid #ffdd95;
-    transition: 1s all ease;
+    transition: .2s all ease;
 }
 
 .banner-btn:hover {
     border: 2px solid #469e75;
     background-color: #469e75;
-    transition: 1s all ease;
+    transition: .2s all ease;
     color: white;
 }
 

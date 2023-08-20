@@ -1,17 +1,13 @@
 import React from "react";
-import Upcoming from "./Upcoming";
-import Trending from "./Trending";
-import MostRated from "./MostRated";
 import Carousel from '../components/carousel/carousel'
+import Upcoming from '../components/homeUpcoming/homeUpcoming'
 
 //TODO: Implement the components
 const page = () => {
   return (
     <>
-      <Upcoming />
-      <Trending />
-      <MostRated />
       <Carousel />
+      <Upcoming />
     </>
   );
 };
