@@ -69,7 +69,6 @@ svg {
     }
 }
 
-
 @media only screen and (max-width:1200px) {
     .banner-img {
         max-width: 500px;
@@ -82,5 +81,67 @@ svg {
 
     .banner-anime-description {
         font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .custom-carousel-2 {
+        height: auto;
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    .banner-img {
+        max-width: 750px;
+        max-height: 237.75px;
+    }
+
+    .banner-anime-details {
+        padding: 0 0rem;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .banner-img {
+        max-width: 600px;
+        max-height: 190.2px;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .banner-img {
+        max-width: 500px;
+        max-height: 158.5px;
+    }
+}
+
+@media only screen and (max-width:520px) {
+    .custom-carousel-2 {
+        height: 70vh;
+        justify-content: center;
+    }
+
+    .banner-img {
+        max-width: 429px;
+        max-height: 136px;
+    }
+}
+
+@media only screen and (max-width:440px) {
+    .banner-img {
+        max-width: 375px;
+        max-height: 119px;
+    }
+}
+
+@media only screen and (max-width:380px) {
+    .custom-carousel-2 {
+        height: 80vh;
+        justify-content: center;
+    }
+
+    .banner-img {
+        max-width: 333.33px;
+        max-height: 105.66px;
     }
 }
