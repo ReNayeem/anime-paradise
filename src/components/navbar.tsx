@@ -6,7 +6,7 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import "./navbar.css";
+import "./../css/navbar.css";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 
