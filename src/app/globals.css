@@ -3,3 +3,7 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
+
+.main-body {
+    min-height: calc(100vh - 91.9px);
+}

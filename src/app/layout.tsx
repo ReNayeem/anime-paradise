@@ -2,6 +2,7 @@ import AppNavbar from "@/components/navbar";
 import "./globals.css";
 import type { Metadata } from "next";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Anime Paradise",
@@ -17,7 +18,10 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <AppNavbar />
-        {children}
+        <div className="main-body">
+          {children}
+        </div>
+        <Footer />
       </body>
     </html>
   );
