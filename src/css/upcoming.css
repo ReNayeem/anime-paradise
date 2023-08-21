@@ -6,8 +6,8 @@
 }
 
 .upcoming-btn {
-  height: 45px;
-  width: 90px;
+  height: 40px;
+  width: 80px;
   font-weight: 500;
   font-size: 16px;
   margin-top: 0.2rem;
@@ -22,4 +22,18 @@
   background-color: #1d8844;
   transition: 0.2s all ease;
   color: white;
+}
+
+.upcoming-anime {
+  height: 370px;
+  width: 308px;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upcoming-anime-img {
+  max-width: 333.33px;
+  max-height: 105.66px;
 }
