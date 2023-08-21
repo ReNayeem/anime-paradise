@@ -14,7 +14,7 @@ function Trending() {
           </Link>
         </div>
 
-        <div className="d-flex flex-wrap justify-content-center gap-3 mb-5">
+        <div className="d-flex flex-wrap justify-content-center gap-3">
           {banners.slice(0, 5).map((banner, index) => {
             return (
               <Link href="">
