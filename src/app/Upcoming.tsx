@@ -7,22 +7,22 @@ function Upcoming() {
   return (
     <div>
       <div className="container">
-        <div className="d-flex justify-content-between my-3">
+        <div className="d-flex justify-content-between upcoming-heading">
           <h1 className="upcoming-title">Upcoming</h1>
           <Link href="/pages/upcoming">
             <button className="upcoming-btn">See all</button>
           </Link>
         </div>
 
-        <div className="d-flex flex-wrap justify-content-center gap-3">
-          {banners.slice(0, 4).map((banner, index) => {
+        <div className="d-flex flex-wrap justify-content-between gap-3 mb-5">
+          {banners.slice(0, 5).map((banner, index) => {
             return (
               <div className="upcoming-anime">
                 <Image
-                  src={banner.image}
+                  src={banner.image2}
                   className="upcoming-anime-img"
-                  width={3000}
-                  height={951}
+                  width={281}
+                  height={400}
                   alt=""
                 />
               </div>

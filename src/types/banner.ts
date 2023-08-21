@@ -3,4 +3,5 @@ export type Banner = {
   description: string;
   rating: any;
   image: any;
+  image2: any;
 };
