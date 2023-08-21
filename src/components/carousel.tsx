@@ -3,7 +3,7 @@
 import Carousel from "react-bootstrap/Carousel";
 import Image from "next/image";
 import { banners } from "@/data/banner.data";
-import "./carousel.css";
+import "./../css/carousel.css";
 
 function BannerCarousel() {
   return (

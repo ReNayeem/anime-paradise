@@ -1,15 +1,13 @@
-import React from "react";
-import Carousel from '../components/carousel/carousel'
-import Upcoming from '../components/homeUpcoming/homeUpcoming'
+import Carousel from "@/components/carousel";
+import Upcoming from "./Upcoming";
 
-//TODO: Implement the components
-const page = () => {
+function Home() {
   return (
     <>
       <Carousel />
       <Upcoming />
     </>
   );
-};
+}
 
-export default page;
+export default Home;
