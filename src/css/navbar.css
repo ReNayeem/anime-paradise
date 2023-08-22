@@ -2,6 +2,10 @@
     text-decoration: none !important;
 }
 
+#navbar {
+    background-color: rgba(245, 245, 245, 0.877) !important;
+}
+
 .navbar-logo {
     max-width: 45px;
     max-height: 45px;

@@ -1,7 +1,9 @@
 export default function Anime({ params }: { params: { id: string } }) {
   return (
     <>
-      <h1>Dynamic Route coming from {params.id}</h1>
+      <div className="container">
+        <h1>Dynamic Route coming from {params.id}</h1>
+      </div>
     </>
   );
 }

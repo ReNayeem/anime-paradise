@@ -14,7 +14,7 @@ function AppNavbar() {
   const pathname = usePathname();
 
   return (
-    <Navbar expand="lg" className="bg-body-tertiary fixed-top navbar">
+    <Navbar expand="lg" className="bg-body-tertiary fixed-top" id="navbar">
       <Container className="container" fluid>
         <Link className="d-flex align-items-center" href="/">
           <Image
@@ -32,10 +32,10 @@ function AppNavbar() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Link href="#upcoming">
+            <Link href="/#upcoming">
               <h6
                 className={
-                  pathname == "#upcoming"
+                  pathname == "/#upcoming"
                     ? "navigation-link navigation-link-active"
                     : "navigation-link navigation-link-inactive"
                 }
@@ -44,10 +44,10 @@ function AppNavbar() {
               </h6>
             </Link>
 
-            <Link href="#trending">
+            <Link href="/#trending">
               <h6
                 className={
-                  pathname == "#trending"
+                  pathname == "/#trending"
                     ? "navigation-link navigation-link-active"
                     : "navigation-link navigation-link-inactive"
                 }
@@ -56,10 +56,10 @@ function AppNavbar() {
               </h6>
             </Link>
 
-            <Link href="#most-rated">
+            <Link href="/#most-rated">
               <h6
                 className={
-                  pathname == "#most-rated"
+                  pathname == "/#most-rated"
                     ? "navigation-link navigation-link-2 navigation-link-active navigation-link-active-2"
                     : "navigation-link navigation-link-2 navigation-link-inactive"
                 }

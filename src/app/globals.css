@@ -6,4 +6,5 @@
 
 .main-body {
     min-height: calc(100vh - 105.11px);
+    margin-top: 65.6px;
 }

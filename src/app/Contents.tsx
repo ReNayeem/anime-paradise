@@ -12,7 +12,7 @@ export default async function Contents({
     <div className="d-flex flex-wrap justify-content-center gap-3">
       {contents.slice(0, 5).map((content) => {
         return (
-          <Link href="" key={content.id}>
+          <Link href={`/content/${content.id}`} key={content.id}>
             <div className="content-anime">
               <Image
                 src={content.image}
