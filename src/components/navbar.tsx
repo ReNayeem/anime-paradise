@@ -14,7 +14,7 @@ function AppNavbar() {
   const pathname = usePathname();
 
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary fixed-top navbar">
       <Container className="container" fluid>
         <Link className="d-flex align-items-center" href="/">
           <Image
