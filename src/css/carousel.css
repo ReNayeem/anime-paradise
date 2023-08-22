@@ -1,149 +1,157 @@
 .custom-carousel {
-    /* background-color: rgb(231, 231, 231); */
-    background: rgb(238, 174, 202);
-    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+  /* background-color: rgb(231, 231, 231); */
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
 }
 
 .custom-carousel-2 {
-    height: 500px;
-    color: black;
-    align-items: center;
+  height: 500px;
+  color: black;
+  align-items: center;
 }
 
 .banner-img {
-    max-width: 750px;
-    max-height: 237.75px;
+  max-width: 750px;
+  max-height: 237.75px;
 }
 
 .banner-anime-details {
-    padding: 0 2rem;
+  padding: 0 2rem;
 }
 
 .banner-anime-name {
-    font-size: 40px;
-    line-height: 1.1em;
-    font-weight: 700;
+  font-size: 40px;
+  line-height: 1.1em;
+  font-weight: 700;
 }
 
 .banner-anime-description {
-    font-weight: 300;
-    line-height: 1.5em;
-    font-size: 13px;
+  font-weight: 300;
+  line-height: 1.5em;
+  font-size: 13px;
 }
 
 .banner-btn {
-    height: 45px;
-    width: 155px;
-    font-weight: 500;
-    font-size: 16px;
-    margin-top: .2rem;
-    border-radius: .5rem;
-    background-color: #ffdd95;
-    border: 2px solid #ffdd95;
-    transition: .2s all ease;
+  height: 45px;
+  width: 155px;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 0.2rem;
+  border-radius: 0.5rem;
+  background-color: #ffdd95;
+  border: 2px solid #ffdd95;
+  transition: 0.2s all ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
 }
 
 .banner-btn:hover {
-    border: 2px solid #469e75;
-    background-color: #469e75;
-    transition: .2s all ease;
-    color: white;
+  border: 2px solid #469e75;
+  background-color: #469e75;
+  transition: 0.2s all ease;
+  color: white;
 }
 
 .banner-btn-icon {
-    margin-bottom: .05rem;
-    transition: 1s all ease;
+  margin-bottom: 0.05rem;
+  transition: 1s all ease;
 }
 
 svg {
-    color: white !important;
+  color: white !important;
 }
 
 .banner-btn:hover .banner-btn-icon {
-    color: white;
-    transition: 1s all ease;
+  color: white;
+  transition: 1s all ease;
 }
 
-@media only screen and (max-width:1400px) {
-    .banner-img {
-        max-width: 600px;
-        max-height: 190.2px;
-    }
+@media only screen and (max-width: 1400px) {
+  .banner-img {
+    max-width: 600px;
+    max-height: 190.2px;
+  }
 }
 
-@media only screen and (max-width:1200px) {
-    .banner-img {
-        max-width: 500px;
-        max-height: 158.5px;
-    }
+@media only screen and (max-width: 1200px) {
+  .banner-img {
+    max-width: 500px;
+    max-height: 158.5px;
+  }
 
-    .banner-anime-name {
-        font-size: 35px;
-    }
+  .banner-anime-name {
+    font-size: 35px;
+  }
 
-    .banner-anime-description {
-        font-size: 12px;
-    }
+  .banner-anime-description {
+    font-size: 12px;
+  }
 }
 
-@media only screen and (max-width:1000px) {
-    .custom-carousel-2 {
-        height: auto;
-        padding: 1rem;
-        flex-direction: column;
-    }
+@media only screen and (max-width: 1000px) {
+  .custom-carousel-2 {
+    height: auto;
+    padding: 1rem;
+    flex-direction: column;
+  }
 
-    .banner-img {
-        max-width: 750px;
-        max-height: 237.75px;
-    }
+  .banner-img {
+    max-width: 750px;
+    max-height: 237.75px;
+  }
 
-    .banner-anime-details {
-        padding: 0 0rem;
-    }
+  .banner-anime-details {
+    padding: 0 0rem;
+  }
 }
 
-@media only screen and (max-width:767px) {
-    .banner-img {
-        max-width: 600px;
-        max-height: 190.2px;
-    }
+@media only screen and (max-width: 767px) {
+  .banner-img {
+    max-width: 600px;
+    max-height: 190.2px;
+  }
 }
 
-@media only screen and (max-width:650px) {
-    .banner-img {
-        max-width: 500px;
-        max-height: 158.5px;
-    }
+@media only screen and (max-width: 650px) {
+  .banner-img {
+    max-width: 500px;
+    max-height: 158.5px;
+  }
 }
 
-@media only screen and (max-width:520px) {
-    .custom-carousel-2 {
-        height: 70vh;
-        justify-content: center;
-    }
+@media only screen and (max-width: 520px) {
+  .custom-carousel-2 {
+    height: 70vh;
+    justify-content: center;
+  }
 
-    .banner-img {
-        max-width: 429px;
-        max-height: 136px;
-    }
+  .banner-img {
+    max-width: 429px;
+    max-height: 136px;
+  }
 }
 
-@media only screen and (max-width:440px) {
-    .banner-img {
-        max-width: 375px;
-        max-height: 119px;
-    }
+@media only screen and (max-width: 440px) {
+  .banner-img {
+    max-width: 375px;
+    max-height: 119px;
+  }
 }
 
-@media only screen and (max-width:380px) {
-    .custom-carousel-2 {
-        height: 80vh;
-        justify-content: center;
-    }
+@media only screen and (max-width: 380px) {
+  .custom-carousel-2 {
+    height: 80vh;
+    justify-content: center;
+  }
 
-    .banner-img {
-        max-width: 333.33px;
-        max-height: 105.66px;
-    }
+  .banner-img {
+    max-width: 333.33px;
+    max-height: 105.66px;
+  }
 }
