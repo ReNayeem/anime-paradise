@@ -1,7 +1,6 @@
-export type Banner = {
+export interface Banner {
+  id: string;
   name: string;
   description: string;
-  rating: any;
   image: any;
-  image2: any;
-};
+}

@@ -4,14 +4,15 @@ import Carousel from "react-bootstrap/Carousel";
 import Image from "next/image";
 import { banners } from "@/data/banner.data";
 import "./../css/carousel.css";
+import Link from "next/link";
 
 function BannerCarousel() {
   return (
     <div className="custom-carousel">
       <Carousel>
-        {banners.slice(0, 3).map((banner, index) => {
+        {banners.slice(0, 3).map((banner) => {
           return (
-            <Carousel.Item key={index}>
+            <Carousel.Item key={banner.id}>
               <div className="d-flex container custom-carousel-2">
                 <Image
                   src={banner.image}
@@ -25,7 +26,9 @@ function BannerCarousel() {
                   <p className="banner-anime-description">
                     {banner.description.slice(0, 700) + "..."}
                   </p>
-                  <button className="banner-btn">Watch now</button>
+                  <Link href={`/content/${banner.id}`} className="banner-btn">
+                    Watch now
+                  </Link>
                 </div>
               </div>
             </Carousel.Item>

@@ -32,10 +32,10 @@ function AppNavbar() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Link href="/pages/upcoming">
+            <Link href="#upcoming">
               <h6
                 className={
-                  pathname == "/pages/upcoming"
+                  pathname == "#upcoming"
                     ? "navigation-link navigation-link-active"
                     : "navigation-link navigation-link-inactive"
                 }
@@ -44,10 +44,10 @@ function AppNavbar() {
               </h6>
             </Link>
 
-            <Link href="/pages/trending">
+            <Link href="#trending">
               <h6
                 className={
-                  pathname == "/pages/trending"
+                  pathname == "#trending"
                     ? "navigation-link navigation-link-active"
                     : "navigation-link navigation-link-inactive"
                 }
@@ -56,10 +56,10 @@ function AppNavbar() {
               </h6>
             </Link>
 
-            <Link href="/pages/most-rated">
+            <Link href="#most-rated">
               <h6
                 className={
-                  pathname == "/pages/most-rated"
+                  pathname == "#most-rated"
                     ? "navigation-link navigation-link-2 navigation-link-active navigation-link-active-2"
                     : "navigation-link navigation-link-2 navigation-link-inactive"
                 }
